@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import NotificationIcon from "../assets/icons/Notification.svg";
 import SaldoCard from "./SaldoCard";
 import OjosMascota from "./OjosMascota";
-import OndaSaldo from "./OndaSaldo";
+import OndaSaldo from "./OndaSaldo.tsx";
 //icono/saludo    notificacion
 //con fondo naranja
 //card de saldo disponible

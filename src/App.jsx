@@ -10,7 +10,7 @@ import TabBar from './components/TabBar';
 
 export default function App() {
   return (
-    <div className="min-h-screen max-w-[430px] mx-auto pb-20" translate="no">
+    <div className="min-h-screen max-w-[430px] mx-auto pb-20 text-carbon" translate="no">
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/catalogo" element={<Catalogo />} />
