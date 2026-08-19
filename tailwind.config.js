@@ -8,6 +8,8 @@ export default {
         teal:    "#2CBFA1",
         ambar:   "#F5B944",   // pendiente / falta hacer
         gris: "#9A9A9A",
+        grisclaro:"#D9D9D9",
+        carbon:"#3C3633"
       },
       fontFamily: {
         display: ["Fredoka", "sans-serif"],

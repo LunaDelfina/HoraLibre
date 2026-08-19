@@ -38,15 +38,15 @@ function Saludo({ nombre }: SaludoProps) {
 
 type TopHomeProps = {
     nombre: string;
-    hijos?: unknown[];
+    hijos: unknown[];
 };
 
-export default function TopHome({ nombre }: TopHomeProps) {
+export default function TopHome({ nombre, hijos }: TopHomeProps) {
     return (
-        <section className="flex flex-col items-center justify-center gap-2 w-full ">
-            <div className="bg-naranja w-full p-8"><Saludo nombre={nombre} /></div>
-            <OndaSaldo className="absolute -bottom-16 z-0" />
-            <div className=" w-full p-8"><SaldoCard /></div>
+        <section className="flex flex-col items-center justify-center gap-1 w-full ">
+            <div className="bg-naranja w-full p-8 pb-0"><Saludo nombre={nombre} /></div>
+            <OndaSaldo className="absolute z-[-4]" />
+            <div className=" w-full p-8"><SaldoCard hijos={hijos} /></div>
         </section>
     )
 
