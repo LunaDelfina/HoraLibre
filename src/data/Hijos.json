@@ -1,0 +1,25 @@
+
+[
+  {
+    "nombre": "Paula",
+    "apellido": "Luna",
+    "edad": 5,
+    "foto": "https://i.pinimg.com/564x/0e/1f/3c/0e1f3c7d8a9b5d4f2b6e5f8a9c1e2d3f.jpg",
+    "id": 1,
+    "escuela": "Jardin de infantes",
+    "grado": "Preescolar",
+    "intereses": ["Dibujar", "Jugar al aire libre", "Leer cuentos"],
+    "saldo": 25760
+  },
+  {
+    "nombre": "Santiago",
+    "apellido": "Luna",
+    "edad": 8,
+    "foto": "https://i.pinimg.com/564x/0e/1f/3c/0e1f3c7d8a9b5d4f2b6e5f8a9c1e2d3f.jpg",
+    "id": 2,
+    "escuela": "Primaria",
+    "grado": "Segundo grado",
+    "intereses": ["Leer", "Escribir", "Dibujar"],
+    "saldo": 15000
+  }
+]
