@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "tipo": "recarga",
+    "tipo": "Recarga",
     "titulo": "Recarga de saldo",
     "hijo":"Paula",
     "medio": "Mercado Pago",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "tipo": "recarga",
+    "tipo": "Recarga",
     "titulo": "Recarga de saldo",
     "hijo":"Pablo",
     "medio": "Transferencia",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "tipo": "devolucion",
+    "tipo": "Devolución",
     "titulo": "Devolución",
     "hijo":"Pablo",
     "medio": "Transferencia",
@@ -32,7 +32,7 @@
   },
   {
     "id": 4,
-    "tipo": "recarga",
+    "tipo": "Recarga",
     "titulo": "Recarga de saldo",
     "hijo":"Pablo",
     "medio": "Transferencia",
@@ -42,7 +42,7 @@
   },
   {
     "id": 5,
-    "tipo": "recarga",
+    "tipo": "Recarga",
     "titulo": "Recarga de saldo",
     "hijo":"Pablo",
     "medio": "Transferencia",
@@ -52,7 +52,7 @@
   },
   {
     "id": 6,
-    "tipo": "compra",
+    "tipo": "Compra",
     "titulo": "Compra en el kiosco",
     "hijo":"Paula",
     "medio": "Mercado Pago",
@@ -62,7 +62,7 @@
   },
   {
     "id": 7,
-    "tipo": "pedido",
+    "tipo": "Pedido",
     "titulo": "Pedido por la app",
     "hijo":"Pablo",
     "medio": "Transferencia",
@@ -72,7 +72,7 @@
   },
   {
     "id": 8,
-    "tipo": "pedido",
+    "tipo": "Pedido",
     "titulo": "Pedido por la app",
     "hijo":"Pablo",
     "medio": "Transferencia",

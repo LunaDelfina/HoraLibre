@@ -16,12 +16,12 @@ export default function MovimientosHome(){
     const movimientos = Movimientos.slice(0, 5);
     return(
 
-        <section className="flex flex-col items-start justify-center px-8 mt-3 gap-2 w-full h-fit">
+        <section className="flex flex-col items-start justify-center px-8 mt-3 gap-3 w-full h-fit mb-[5vh]">
             <div>
                 <h1 className=" font-display font-bold text-xl">Últimos movimientos</h1>
                 <NavLink to="/movimientos" className="text-teal font-sans font-semibold text-sm underline underline-offset-4">Ver todos →</NavLink>
             </div>
-            <div>
+            <div className="flex flex-col gap-5 w-full">
                 {movimientos.map((movimiento:MovimientoProps)=>
                     <ActivityCard key={movimiento.id} movimiento={movimiento}/>
                     )}
