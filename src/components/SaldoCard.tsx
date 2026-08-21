@@ -2,11 +2,7 @@
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-type Hijo = {
-    nombre: string;
-    id?: string;
-    saldo?: number;
-};
+import type {Hijo} from "../Types"
 
 function NombresHijos({
     hijos,

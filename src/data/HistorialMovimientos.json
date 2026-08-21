@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "idMovimiento": 1,
+    "tipo": "pago_realizado",
+    "descripcion": "Se realizó el pago con Mercado Pago",
+    "fecha": "19/07/26",
+    "hora": "09:15am"
+  },
+  {
+    "id": 2,
+    "idMovimiento": 1,
+    "tipo": "aprobacion",
+    "descripcion": "La cantina aprobó la recarga",
+    "fecha": "19/07/26",
+    "hora": "09:20am"
+  },
+  {
+    "id": 3,
+    "idMovimiento": 2,
+    "tipo": "ingreso_de_transferencia",
+    "descripcion": "Se hizo la transferencia, en espera de comprobación",
+    "fecha": "Hoy",
+    "hora": "10:02am"
+  },
+  {
+    "id": 4,
+    "idMovimiento": 2,
+    "tipo": "aprobacion_de_transferencia",
+    "descripcion": "La cantina aprobó la transferencia",
+    "fecha": "Hoy",
+    "hora": "10:10am"
+  },
+  {
+    "id": 5,
+    "idMovimiento": 3,
+    "tipo": "cancelacion",
+    "descripcion": "El pedido fue cancelado",
+    "fecha": "19/07/26",
+    "hora": "11:40am"
+  },
+  {
+    "id": 6,
+    "idMovimiento": 3,
+    "tipo": "devolucion",
+    "descripcion": "Se devolvió el saldo por transferencia",
+    "fecha": "19/07/26",
+    "hora": "11:47am"
+  },
+  {
+    "id": 7,
+    "idMovimiento": 4,
+    "tipo": "ingreso_de_transferencia",
+    "descripcion": "Se hizo la transferencia, en espera de comprobación",
+    "fecha": "19/07/26",
+    "hora": "12:30pm"
+  },
+  {
+    "id": 8,
+    "idMovimiento": 5,
+    "tipo": "ingreso_de_transferencia",
+    "descripcion": "Se hizo la transferencia, en espera de comprobación",
+    "fecha": "19/07/26",
+    "hora": "01:05pm"
+  },
+  {
+    "id": 9,
+    "idMovimiento": 5,
+    "tipo": "rechazo",
+    "descripcion": "La cantina rechazó la transferencia",
+    "fecha": "19/07/26",
+    "hora": "01:20pm"
+  },
+  {
+    "id": 10,
+    "idMovimiento": 6,
+    "tipo": "compra",
+    "descripcion": "Se realizó la compra en el kiosco",
+    "fecha": "Hoy",
+    "hora": "10:35am"
+  },
+  {
+    "id": 11,
+    "idMovimiento": 7,
+    "tipo": "pedido_recibido",
+    "descripcion": "Se recibió el pedido por la app",
+    "fecha": "Hoy",
+    "hora": "10:35am"
+  },
+  {
+    "id": 12,
+    "idMovimiento": 7,
+    "tipo": "armando",
+    "descripcion": "La cantina está armando el pedido",
+    "fecha": "Hoy",
+    "hora": "10:40am"
+  },
+  {
+    "id": 13,
+    "idMovimiento": 7,
+    "tipo": "listo",
+    "descripcion": "El pedido está listo para retirar",
+    "fecha": "Hoy",
+    "hora": "10:50am"
+  },
+  {
+    "id": 14,
+    "idMovimiento": 8,
+    "tipo": "pedido_recibido",
+    "descripcion": "Se recibió el pedido por la app",
+    "fecha": "Hoy",
+    "hora": "10:35am"
+  },
+  {
+    "id": 15,
+    "idMovimiento": 8,
+    "tipo": "rechazo",
+    "descripcion": "La cantina rechazó el pedido",
+    "fecha": "Hoy",
+    "hora": "10:38am"
+  }
+]

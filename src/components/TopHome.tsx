@@ -9,10 +9,7 @@ import OndaSaldo from "./OndaSaldo.tsx";
 //card de saldo disponible
 //elemento en movimiento detras del card de saldo
 
-
-type SaludoProps = {
-    nombre: string;
-};
+import type { SaludoProps, TopHomeProps } from "../Types.tsx";
 
 
 function Saludo({ nombre }: SaludoProps) {
@@ -36,10 +33,7 @@ function Saludo({ nombre }: SaludoProps) {
 
 
 
-type TopHomeProps = {
-    nombre: string;
-    hijos: unknown[];
-};
+
 
 export default function TopHome({ nombre, hijos }: TopHomeProps) {
     return (

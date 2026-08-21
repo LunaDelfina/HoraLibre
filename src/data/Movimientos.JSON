@@ -7,7 +7,8 @@
     "medio": "Mercado Pago",
     "estado": "Aprobada",
     "monto": 35000,
-    "fecha": "19/07/26"
+    "fecha": "19/07/26",
+    "hora": "09:15am"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "medio": "Transferencia",
     "estado": "Aprobada",
     "monto": 35000,
-    "fecha": "19/07/26"
+    "fecha": "Hoy",
+    "hora": "10:02am"
   },
   {
     "id": 3,
@@ -25,10 +27,11 @@
     "titulo": "Devolución",
     "hijo":"Pablo",
     "medio": "Transferencia",
-    
+
     "estado": "pedido cancelado",
     "monto": 2400,
-    "fecha": "19/07/26"
+    "fecha": "19/07/26",
+    "hora": "11:47am"
   },
   {
     "id": 4,
@@ -38,7 +41,8 @@
     "medio": "Transferencia",
     "estado": "Pendiente de aprobación",
     "monto": 35000,
-    "fecha": "19/07/26"
+    "fecha": "19/07/26",
+    "hora": "12:30pm"
   },
   {
     "id": 5,
@@ -48,7 +52,8 @@
     "medio": "Transferencia",
     "estado": "Rechazado",
     "monto": 35000,
-    "fecha": "19/07/26"
+    "fecha": "19/07/26",
+    "hora": "01:05pm"
   },
   {
     "id": 6,
@@ -58,7 +63,8 @@
     "medio": "Mercado Pago",
     "estado": null,
     "monto": 5000,
-    "fecha": "Hoy 10:35am"
+    "fecha": "Hoy",
+    "hora": "10:35am"
   },
   {
     "id": 7,
@@ -68,7 +74,8 @@
     "medio": "Transferencia",
     "estado": "Listo para retirar",
     "monto": 2500,
-    "fecha": "Hoy 10:35am"
+    "fecha": "Hoy",
+    "hora": "10:35am"
   },
   {
     "id": 8,
@@ -78,6 +85,7 @@
     "medio": "Transferencia",
     "estado": "Rechazado",
     "monto": 2400,
-    "fecha": "Hoy 10:35am"
+    "fecha": "Hoy",
+    "hora": "10:35am"
   }
 ]
