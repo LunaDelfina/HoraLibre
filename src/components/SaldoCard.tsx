@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import type {Hijo} from "../Types"
+import type {Hijo, SaldoCardProps} from "../Types"
 
 function NombresHijos({
     hijos,
@@ -39,7 +39,9 @@ function NombresHijos({
         </div>
     )
 }
-export default function SaldoCard({ hijos }: { hijos: unknown[] }) {
+export default function SaldoCard({ hijos, pantalla }: SaldoCardProps) {
+
+
     const [hijoSeleccionado, setHijoSeleccionado] = useState<Hijo | null>(
         hijos.find((hijo): hijo is Hijo =>
             typeof hijo === "object" && hijo !== null && "nombre" in hijo && typeof hijo.nombre === "string"
@@ -55,11 +57,20 @@ export default function SaldoCard({ hijos }: { hijos: unknown[] }) {
             />
             <div className="bg-crema h-full w-full px-4 py-6 rounded-b-lg rounded-tr-lg text-carbon shadow-md flex flex-col items-start justify-center gap-1 font-sans text-md">
                 <p className=" font-light">Saldo disponible</p>
-                <p className=" font-display font-bold text-4xl mb-2 ">${hijoSeleccionado?.saldo}</p>
-
-                <p className=" font-thin font-gris text-sm">Hoy gastó $2570 en la cantina</p>
-                <NavLink to="/cargarsaldo"
-                className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
+                {pantalla === "Inicio" ? (
+                    <>
+                        <p className=" font-display font-bold text-4xl mb-2 ">${hijoSeleccionado?.saldo}</p>
+                        <p className=" font-thin font-gris text-sm">Hoy gastó $2570 en la cantina</p>
+                        <NavLink to="/cargarsaldo"
+                        className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
+                    </>
+                ) : (
+                    <div className="w-full flex items-center justify-between">
+                        <p className=" font-display font-bold text-4xl ">${hijoSeleccionado?.saldo}</p>
+                        <NavLink to="/cargarsaldo"
+                        className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
+                    </div>
+                )}
             </div>
         </div>
     )

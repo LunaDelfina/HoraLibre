@@ -38,13 +38,20 @@ export type MovimientoProps={
         hora: string;
     };
 
-export type SaludoProps = {
+export type SaludoHomeProps = {
     nombre: string;
+};
+export type SaludoProps = {
+    titulo: string;
+    subtitulo: string;
 };
 
 export type TopHomeProps = {
     nombre: string;
     hijos: unknown[];
+    pantalla:string;
+    titulo:string;
+    subtitulo:string;
 };
 
 
@@ -57,6 +64,11 @@ export type Hijo = {
     nombre: string;
     id?: string;
     saldo?: number;
+};
+
+export type SaldoCardProps = {
+    hijos: unknown[];
+    pantalla: string;
 };
 
 export type HistorialMovimientoProps={
@@ -77,5 +89,12 @@ export type AlmuerzoData = {
 }
 
 export type AlmuerzoProps = {
-    data: AlmuerzoData
+    data: AlmuerzoData;
+    seleccionado:boolean;
+    onToggle:()=>void;
+}
+
+export type DisclaimerProps = {
+    nombreEscuela: string;
+    telefono: string;
 }
