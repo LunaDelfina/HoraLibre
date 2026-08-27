@@ -67,3 +67,15 @@ export type HistorialMovimientoProps={
     fecha: string;
     hora: string;
 }
+
+export type AlmuerzoData = {
+    id: number,
+    fecha: string,
+    plato: string,
+    descripcion: string,
+    precio: number
+}
+
+export type AlmuerzoProps = {
+    data: AlmuerzoData
+}

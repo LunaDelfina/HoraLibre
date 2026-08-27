@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "fecha": "23/08",
+        "plato": "Costeleta de cerdo",
+        "descripcion": "Con ensalada o papas",
+        "precio": 15000
+    },
+    {
+        "id": 2,
+        "fecha": "23/08",
+        "plato": "Fideos con crema",
+        "descripcion": "Con pechuga de pollo",
+        "precio": 9000
+    },
+    {
+        "id": 3,
+        "fecha": "23/08",
+        "plato": "Sánguche de milanesa",
+        "descripcion": "Lechuga, tomate y mayonesa (Con papas)",
+        "precio": 5000
+    }
+]

@@ -8,7 +8,7 @@ import type {MovimientoProps} from "../Types"
 
 export default function MovimientosHome(){
     
-    const movimientos = Movimientos.slice(0, 5);
+    const movimientos = Movimientos.slice(-5);
     const [movimientoAbierto,setMovimientoAbierto]=useState<MovimientoProps | null>(null)
 
     const handleMovimientoClick=(movimiento:MovimientoProps)=>{
