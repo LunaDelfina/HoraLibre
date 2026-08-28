@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "Bebidas",
+        "slug": "bebidas",
+        "color": "teal"
+    },
+    {
+        "id": 2,
+        "titulo": "Snacks",
+        "slug": "snacks",
+        "color": "naranja"
+    },
+    {
+        "id": 3,
+        "titulo": "Golosinas",
+        "slug": "golosinas",
+        "color": "teal"
+    },
+    {
+        "id": 4,
+        "titulo": "Panificados",
+        "slug": "panificados",
+        "color": "naranja"
+    },
+    {
+        "id": 5,
+        "titulo": "Lácteos",
+        "slug": "lacteos",
+        "color": "teal"
+    },
+    {
+        "id": 6,
+        "titulo": "Frutas",
+        "slug": "frutas",
+        "color": "naranja"
+    }
+]

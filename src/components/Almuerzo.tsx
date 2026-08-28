@@ -45,6 +45,7 @@ export default function Almuerzo() {
                 ))}
             </div>
             <WhatsappAlmuerzo seleccionados={seleccionados} platos={AlmuerzoData} />
+            <div className="bg-ambar/25 rounded-lg text-center p-2 text-gris font-bold text-xs">Pedilo antes de las 10:35</div>
 
         </section>
     )

@@ -1,0 +1,326 @@
+[
+    {
+        "id": 1,
+        "titulo": "Coca Cola",
+        "subtitulo": "Botella 500ml",
+        "precio": 2500,
+        "foto": "/products/coca-cola.jpg",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 1
+    },
+    {
+        "id": 2,
+        "titulo": "Sprite",
+        "subtitulo": "Botella 500ml",
+        "precio": 2500,
+        "foto": "/products/sprite-500ml.jpg",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 1
+    },
+    {
+        "id": 3,
+        "titulo": "Agua Saborizada Manzana",
+        "subtitulo": "Botella 500ml",
+        "precio": 2200,
+        "foto": "",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 2
+    },
+    {
+        "id": 4,
+        "titulo": "Agua Saborizada Pomelo",
+        "subtitulo": "Botella 500ml",
+        "precio": 2200,
+        "foto": "",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 2
+    },
+    {
+        "id": 5,
+        "titulo": "Jugo de Naranja Exprimido",
+        "subtitulo": "Vaso 300ml",
+        "precio": 2800,
+        "foto": "/products/jugo-naranja.jpg",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 3
+    },
+    {
+        "id": 6,
+        "titulo": "Cepita Multifruta",
+        "subtitulo": "Caja 200ml",
+        "precio": 1800,
+        "foto": "",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 3
+    },
+    {
+        "id": 7,
+        "titulo": "Gatorade Naranja",
+        "subtitulo": "Botella 500ml",
+        "precio": 3200,
+        "foto": "/products/gatorade-limon.jpg",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 4
+    },
+    {
+        "id": 8,
+        "titulo": "Powerade Frutos Rojos",
+        "subtitulo": "Botella 500ml",
+        "precio": 3200,
+        "foto": "",
+        "categoriaGeneral": 1,
+        "idSubcategoria": 4
+    },
+    {
+        "id": 9,
+        "titulo": "Papas Fritas Clásicas",
+        "subtitulo": "Bolsa 45g",
+        "precio": 2000,
+        "foto": "/products/papas-lays.jpg",
+        "categoriaGeneral": 2,
+        "idSubcategoria": 5
+    },
+    {
+        "id": 10,
+        "titulo": "Papas Fritas Pringles Original",
+        "subtitulo": "Tubo 40g",
+        "precio": 3500,
+        "foto": "/products/papas-pringles.jpg",
+        "categoriaGeneral": 2,
+        "idSubcategoria": 5
+    },
+    {
+        "id": 11,
+        "titulo": "Grisines Salados",
+        "subtitulo": "Paquete 100g",
+        "precio": 1800,
+        "foto": "/products/palitos-salados.jpg",
+        "categoriaGeneral": 2,
+        "idSubcategoria": 6
+    },
+    {
+        "id": 12,
+        "titulo": "Bastoncitos de Queso",
+        "subtitulo": "Paquete 90g",
+        "precio": 2200,
+        "foto": "/products/bastoncitos-queso.jpg",
+        "categoriaGeneral": 2,
+        "idSubcategoria": 6
+    },
+    {
+        "id": 13,
+        "titulo": "Chizitos",
+        "subtitulo": "Bolsa 90g",
+        "precio": 1900,
+        "foto": "/products/chizitos.jpg",
+        "categoriaGeneral": 2,
+        "idSubcategoria": 7
+    },
+    {
+        "id": 14,
+        "titulo": "Doritos Queso",
+        "subtitulo": "Bolsa 70g",
+        "precio": 2600,
+        "foto": "",
+        "categoriaGeneral": 2,
+        "idSubcategoria": 7
+    },
+    {
+        "id": 15,
+        "titulo": "Chocolate Milka",
+        "subtitulo": "Tableta 100g",
+        "precio": 3800,
+        "foto": "/products/chocolate-milka.jpg",
+        "categoriaGeneral": 3,
+        "idSubcategoria": 8
+    },
+    {
+        "id": 16,
+        "titulo": "Bon o Bon",
+        "subtitulo": "Pack x3",
+        "precio": 1500,
+        "foto": "",
+        "categoriaGeneral": 3,
+        "idSubcategoria": 8
+    },
+    {
+        "id": 17,
+        "titulo": "Caramelos Surtidos",
+        "subtitulo": "Bolsa individual",
+        "precio": 800,
+        "foto": "/products/caramelos.jpg",
+        "categoriaGeneral": 3,
+        "idSubcategoria": 9
+    },
+    {
+        "id": 18,
+        "titulo": "Chicles Beldent Menta",
+        "subtitulo": "Blister",
+        "precio": 900,
+        "foto": "/products/chicles-menta.jpg",
+        "categoriaGeneral": 3,
+        "idSubcategoria": 9
+    },
+    {
+        "id": 19,
+        "titulo": "Alfajor de Chocolate",
+        "subtitulo": "Unidad",
+        "precio": 1800,
+        "foto": "",
+        "categoriaGeneral": 3,
+        "idSubcategoria": 10
+    },
+    {
+        "id": 20,
+        "titulo": "Alfajor Blanco",
+        "subtitulo": "Unidad",
+        "precio": 1800,
+        "foto": "/products/alfajor-blanco.jpg",
+        "categoriaGeneral": 3,
+        "idSubcategoria": 10
+    },
+    {
+        "id": 21,
+        "titulo": "Medialuna de Manteca",
+        "subtitulo": "Unidad",
+        "precio": 1200,
+        "foto": "/products/medialuna.jpg",
+        "categoriaGeneral": 4,
+        "idSubcategoria": 11
+    },
+    {
+        "id": 22,
+        "titulo": "Vigilante",
+        "subtitulo": "Unidad",
+        "precio": 1500,
+        "foto": "/products/vigilante.jpg",
+        "categoriaGeneral": 4,
+        "idSubcategoria": 11
+    },
+    {
+        "id": 23,
+        "titulo": "Sándwich de Jamón y Queso",
+        "subtitulo": "Miga",
+        "precio": 4500,
+        "foto": "/products/sandwich-jamon-queso.jpg",
+        "categoriaGeneral": 4,
+        "idSubcategoria": 12
+    },
+    {
+        "id": 24,
+        "titulo": "Sándwich de Milanesa",
+        "subtitulo": "Pan francés",
+        "precio": 5500,
+        "foto": "/products/sandwich-milanesa.jpg",
+        "categoriaGeneral": 4,
+        "idSubcategoria": 12
+    },
+    {
+        "id": 25,
+        "titulo": "Budín",
+        "subtitulo": "Porción",
+        "precio": 2000,
+        "foto": "/products/budin-naranja.jpg",
+        "categoriaGeneral": 4,
+        "idSubcategoria": 13
+    },
+    {
+        "id": 26,
+        "titulo": "Torta de Chocolate",
+        "subtitulo": "Porción",
+        "precio": 2500,
+        "foto": "/products/torta-chocolate.jpg",
+        "categoriaGeneral": 4,
+        "idSubcategoria": 13
+    },
+    {
+        "id": 27,
+        "titulo": "Yogur Bebible Vainilla",
+        "subtitulo": "Botella 200ml",
+        "precio": 2000,
+        "foto": "",
+        "categoriaGeneral": 5,
+        "idSubcategoria": 14
+    },
+    {
+        "id": 28,
+        "titulo": "Yogur con Cereales",
+        "subtitulo": "Vaso",
+        "precio": 2400,
+        "foto": "/products/yogur-cereales.jpg",
+        "categoriaGeneral": 5,
+        "idSubcategoria": 14
+    },
+    {
+        "id": 29,
+        "titulo": "Danonino",
+        "subtitulo": "Pack x2",
+        "precio": 1500,
+        "foto": "",
+        "categoriaGeneral": 5,
+        "idSubcategoria": 15
+    },
+    {
+        "id": 30,
+        "titulo": "Postre de Chocolate",
+        "subtitulo": "Vaso",
+        "precio": 1800,
+        "foto": "",
+        "categoriaGeneral": 5,
+        "idSubcategoria": 15
+    },
+    {
+        "id": 31,
+        "titulo": "Queso Untable",
+        "subtitulo": "Pote 100g",
+        "precio": 2600,
+        "foto": "/products/queso-untable.jpg",
+        "categoriaGeneral": 5,
+        "idSubcategoria": 16
+    },
+    {
+        "id": 32,
+        "titulo": "Queso Untable Light",
+        "subtitulo": "Pote 100g",
+        "precio": 2700,
+        "foto": "/products/queso-untable-light.jpg",
+        "categoriaGeneral": 5,
+        "idSubcategoria": 16
+    },
+    {
+        "id": 33,
+        "titulo": "Banana",
+        "subtitulo": "Unidad",
+        "precio": 800,
+        "foto": "/products/banana.jpg",
+        "categoriaGeneral": 6,
+        "idSubcategoria": 17
+    },
+    {
+        "id": 34,
+        "titulo": "Manzana Roja",
+        "subtitulo": "Unidad",
+        "precio": 900,
+        "foto": "/products/manzana-roja.jpg",
+        "categoriaGeneral": 6,
+        "idSubcategoria": 17
+    },
+    {
+        "id": 35,
+        "titulo": "Pasas de Uva",
+        "subtitulo": "Bolsa 30g",
+        "precio": 1500,
+        "foto": "/products/pasas-uva.jpg",
+        "categoriaGeneral": 6,
+        "idSubcategoria": 18
+    },
+    {
+        "id": 36,
+        "titulo": "Mix de Frutos Secos",
+        "subtitulo": "Bolsa 30g",
+        "precio": 2200,
+        "foto": "/products/mix-frutos-secos.jpg",
+        "categoriaGeneral": 6,
+        "idSubcategoria": 18
+    }
+]

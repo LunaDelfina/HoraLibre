@@ -98,3 +98,33 @@ export type DisclaimerProps = {
     nombreEscuela: string;
     telefono: string;
 }
+
+export type CategoriesProps={
+    titulo:string;
+    id:number;
+    seleccionado:boolean;
+    onClick:()=>void;
+
+}
+
+export type CategorieSelectProps={
+    onClick:(idCategoria: number)=>void;
+    categorias:unknown[];
+    categoriaSeleccionada:number;
+
+}
+
+export type CategoriaProps={
+    categoria:CategoriesProps;
+}
+
+export type ProductoProps={
+    id:number;
+    titulo:string;
+    subtitulo:string;
+    precio:number;
+    foto:string;
+    categoriaGeneral:number;
+    idSubcategoria:number;
+
+}

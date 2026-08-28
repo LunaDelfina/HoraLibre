@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "titulo": "Gaseosas",
+        "slug": "gaseosas",
+        "idCategoriaPrincipal": 1
+    },
+    {
+        "id": 2,
+        "titulo": "Agua Saborizadas",
+        "slug": "agua-saborizadas",
+        "idCategoriaPrincipal": 1
+    },
+    {
+        "id": 3,
+        "titulo": "Jugos",
+        "slug": "jugos",
+        "idCategoriaPrincipal": 1
+    },
+    {
+        "id": 4,
+        "titulo": "Isotónicas",
+        "slug": "isotonicas",
+        "idCategoriaPrincipal": 1
+    },
+    {
+        "id": 5,
+        "titulo": "Papas Fritas",
+        "slug": "papas-fritas",
+        "idCategoriaPrincipal": 2
+    },
+    {
+        "id": 6,
+        "titulo": "Palitos y Bastoncitos",
+        "slug": "palitos-y-bastoncitos",
+        "idCategoriaPrincipal": 2
+    },
+    {
+        "id": 7,
+        "titulo": "Snacks de Maíz",
+        "slug": "snacks-de-maiz",
+        "idCategoriaPrincipal": 2
+    },
+    {
+        "id": 8,
+        "titulo": "Chocolates",
+        "slug": "chocolates",
+        "idCategoriaPrincipal": 3
+    },
+    {
+        "id": 9,
+        "titulo": "Caramelos y Chicles",
+        "slug": "caramelos-y-chicles",
+        "idCategoriaPrincipal": 3
+    },
+    {
+        "id": 10,
+        "titulo": "Alfajores",
+        "slug": "alfajores",
+        "idCategoriaPrincipal": 3
+    },
+    {
+        "id": 11,
+        "titulo": "Facturas",
+        "slug": "facturas",
+        "idCategoriaPrincipal": 4
+    },
+    {
+        "id": 12,
+        "titulo": "Sándwiches",
+        "slug": "sandwiches",
+        "idCategoriaPrincipal": 4
+    },
+    {
+        "id": 13,
+        "titulo": "Tortas y Budines",
+        "slug": "tortas-y-budines",
+        "idCategoriaPrincipal": 4
+    },
+    {
+        "id": 14,
+        "titulo": "Yogures",
+        "slug": "yogures",
+        "idCategoriaPrincipal": 5
+    },
+    {
+        "id": 15,
+        "titulo": "Postres",
+        "slug": "postres",
+        "idCategoriaPrincipal": 5
+    },
+    {
+        "id": 16,
+        "titulo": "Quesos Untables",
+        "slug": "quesos-untables",
+        "idCategoriaPrincipal": 5
+    },
+    {
+        "id": 17,
+        "titulo": "Frutas Frescas",
+        "slug": "frutas-frescas",
+        "idCategoriaPrincipal": 6
+    },
+    {
+        "id": 18,
+        "titulo": "Frutas Secas y Deshidratadas",
+        "slug": "frutas-secas-y-deshidratadas",
+        "idCategoriaPrincipal": 6
+    }
+]
