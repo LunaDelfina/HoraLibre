@@ -15,6 +15,7 @@ function filtrarproductos(cat: number) {
 
 function handleClickVerTodos(cat: number) {
     console.log(cat);
+    alert("Por que no te tocas el culo")
 
 }
 
