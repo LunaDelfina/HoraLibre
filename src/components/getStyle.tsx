@@ -10,7 +10,7 @@ import ListoBadge from '../assets/ActivityIcons/ListoBadge.svg';
 import PendienteBadge from '../assets/ActivityIcons/PendienteBadge.svg';
 import RechazadoBadge from '../assets/ActivityIcons/RechazadoBadge.svg';
 
-import type { ActivityCardProps, ActivityStyle } from '../Types';
+import type { ActivityCardProps, ActivityStyle } from '../types/movimiento.types';
 export default function getStyle({ movimiento }: ActivityCardProps): ActivityStyle {
     const teal= "rgba(46, 196, 182, 1)"
     const verde_primario = "#0F6E56"

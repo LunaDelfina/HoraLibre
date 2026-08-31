@@ -1,8 +1,8 @@
 
-import type { MovimientoSheetProps } from "../Types";
+import type { MovimientoSheetProps } from "../types/movimiento.types";
 import getStyle from "./getStyle";
 import HistorialMovimientos from "../data/HistorialMovimientos.json"
-import type { HistorialMovimientoProps } from "../Types";
+import type { HistorialMovimientoProps } from "../types/movimiento.types";
 //import { useState } from "react";
 import CopyButton from "./copyButton.tsx";
 import { Whatsapp } from "./CTAWhatsapp.tsx"

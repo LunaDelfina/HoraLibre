@@ -9,7 +9,7 @@ import OndaSaldo from "./OndaSaldo.tsx";
 //card de saldo disponible
 //elemento en movimiento detras del card de saldo
 
-import type { SaludoProps,SaludoHomeProps, TopHomeProps } from "../Types.tsx";
+import type { SaludoProps,SaludoHomeProps, TopHomeProps } from "../types/home.types.ts";
 
 
 

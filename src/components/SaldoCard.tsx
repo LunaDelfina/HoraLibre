@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import type {Hijo, SaldoCardProps} from "../Types"
+import type {Hijo, SaldoCardProps} from "../types/home.types"
 
 function NombresHijos({
     hijos,

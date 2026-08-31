@@ -4,7 +4,7 @@ import Movimientos from "../data/Movimientos.json";
 import ActivityCard from "./ActivityCard";
 import MovimientoSheet from "./MovimientoSheet";
 import { useState } from "react";
-import type {MovimientoProps} from "../Types"
+import type {MovimientoProps} from "../types/movimiento.types"
 
 export default function MovimientosHome(){
     

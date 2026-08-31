@@ -106,5 +106,23 @@
         "titulo": "Frutas Secas y Deshidratadas",
         "slug": "frutas-secas-y-deshidratadas",
         "idCategoriaPrincipal": 6
+    },
+    {
+        "id": 19,
+        "titulo": "Café",
+        "slug": "cafe",
+        "idCategoriaPrincipal": 1
+    },
+    {
+        "id": 20,
+        "titulo": "Galletitas Saladas",
+        "slug": "galletitas-saladas",
+        "idCategoriaPrincipal": 2
+    },
+    {
+        "id": 21,
+        "titulo": "Galletitas Dulces",
+        "slug": "galletitas-dulces",
+        "idCategoriaPrincipal": 3
     }
 ]

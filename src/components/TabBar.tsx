@@ -82,7 +82,7 @@ function Tab({ to, label, iconActive, iconInactive, badge }: TabProps) {
 
 export default function TabBar() {
     return (
-        <nav className="fixed bottom-0 inset-x-0 z-50 mx-auto max-w-[430px] bg-white rounded-t-3xl shadow-[0_-2px_16px_rgba(0,0,0,0.08)] flex justify-around items-end px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+        <nav className="fixed bottom-0 inset-x-0 z-50 mx-auto max-w-[430px] bg-white rounded-t-3xl shadow-[0_-2px_16px_rgba(0,0,0,0.08)] flex justify-around items-end px-2 pt-0 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
             <Tab to="/" label="Inicio" iconActive={Home_Active} iconInactive={Home_Inactive} />
             <Tab to="/catalogo" label="Catálogo" iconActive={Catalog_Active} iconInactive={Catalog_Inactive} />
             <CargarTab />
