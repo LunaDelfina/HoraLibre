@@ -1,4 +1,4 @@
-import EscuelaData from "../data/EscuelaData.json"
+import EscuelaData from "../../data/EscuelaData.json"
 
 export default function Disclaimer() {
     const { Nombre, telefono } = EscuelaData[0]

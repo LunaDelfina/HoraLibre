@@ -1,5 +1,5 @@
-import WhatsappLogo from "../assets/Logos/Whatsapp.svg"
-import type { AlmuerzoData } from "../types/almuerzo.types"
+import WhatsappLogo from "../../assets/Logos/Whatsapp.svg"
+import type { AlmuerzoData } from "../../types/almuerzo.types"
 export function Whatsapp() {
     return (
         <button className="w-full bg-teal flex justify-center items-center py-2.5 rounded-lg gap-3 active:opacity-90">

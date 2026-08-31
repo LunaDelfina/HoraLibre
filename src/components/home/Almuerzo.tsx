@@ -1,8 +1,8 @@
 
 import { useState } from "react";
 import AlmuerzoItem from "./AlmuerzoItem";
-import AlmuerzoData from "../data/Almuerzo.json";
-import { WhatsappAlmuerzo } from "./CTAWhatsapp"
+import AlmuerzoData from "../../data/Almuerzo.json";
+import { WhatsappAlmuerzo } from "../common/CTAWhatsapp"
 
 
 export default function Almuerzo() {

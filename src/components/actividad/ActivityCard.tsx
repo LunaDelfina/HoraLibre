@@ -1,5 +1,5 @@
 import getStyle from "./getStyle";
-import type { ActivityCardProps } from "../types/movimiento.types";
+import type { ActivityCardProps } from "../../types/movimiento.types";
 
 
 export default function ActivityCard({ movimiento }: ActivityCardProps) {

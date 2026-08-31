@@ -1,59 +1,40 @@
 
 
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import type {Hijo, SaldoCardProps} from "../types/home.types"
+import { useHijos } from "../../context/HijosContext";
+import type {Hijo, SaldoCardProps} from "../../types/home.types"
 
 function NombresHijos({
     hijos,
     hijoSeleccionado,
     onSelect,
 }: {
-    hijos: unknown[];
+    hijos: Hijo[];
     hijoSeleccionado: Hijo | null;
     onSelect: (hijo: Hijo) => void;
 }) {
-    const handleClickHijo = (hijo: Hijo) => {
-        onSelect(hijo);
-    };
-
     const hijoseleccionadostyle="bg-crema rounded-t-lg py-2 px-4 text-naranja font-display font-bold text-lg h-full items-center"
     const hijosinseleccionarstyle="bg-[#D9D9D9] py-2 px-4 font-light rounded-tr-lg text-carbon text-md h-full"
-    const nombres = hijos
-        .filter((hijo): hijo is Hijo =>
-            typeof hijo === "object" &&
-            hijo !== null &&
-            "nombre" in hijo &&
-            typeof hijo.nombre === "string"
-        )
-        .map((hijo) => hijo.nombre);
     return(
         <div className="flex items-start justify-start w-fit bg-[#D9D9D9] h-10 rounded-t-lg overflow-hidden">
-            {nombres.map((nombre: string) => (
-                <p className={hijoSeleccionado?.nombre===nombre ? hijoseleccionadostyle : hijosinseleccionarstyle}
-                      key={nombre} onClick={()=>handleClickHijo(hijos.find((hijo): hijo is Hijo =>
-                          typeof hijo === "object" && hijo !== null && "nombre" in hijo && hijo.nombre === nombre
-                      ) ?? { nombre })}
-                 >{nombre}</p>
+            {hijos.map((hijo) => (
+                <p className={hijoSeleccionado?.nombre===hijo.nombre ? hijoseleccionadostyle : hijosinseleccionarstyle}
+                      key={hijo.nombre} onClick={()=>onSelect(hijo)}
+                 >{hijo.nombre}</p>
             ))}
         </div>
     )
 }
-export default function SaldoCard({ hijos, pantalla }: SaldoCardProps) {
+export default function SaldoCard({ pantalla }: SaldoCardProps) {
 
-
-    const [hijoSeleccionado, setHijoSeleccionado] = useState<Hijo | null>(
-        hijos.find((hijo): hijo is Hijo =>
-            typeof hijo === "object" && hijo !== null && "nombre" in hijo && typeof hijo.nombre === "string"
-        ) ?? null
-    );
+    const { hijos, hijoSeleccionado, seleccionarHijo } = useHijos();
 
     return(
         <div className="w-full  h-fit rounded-lg ">
             <NombresHijos
                 hijos={hijos}
                 hijoSeleccionado={hijoSeleccionado}
-                onSelect={setHijoSeleccionado}
+                onSelect={seleccionarHijo}
             />
             <div className="bg-crema h-full w-full px-4 py-6 rounded-b-lg rounded-tr-lg text-carbon shadow-md flex flex-col items-start justify-center gap-1 font-sans text-md">
                 <p className=" font-light">Saldo disponible</p>

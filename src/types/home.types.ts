@@ -9,7 +9,6 @@ export type SaludoProps = {
 
 export type TopHomeProps = {
     nombre: string;
-    hijos: unknown[];
     pantalla: string;
     titulo: string;
     subtitulo: string;
@@ -17,11 +16,10 @@ export type TopHomeProps = {
 
 export type Hijo = {
     nombre: string;
-    id?: string;
+    id?: number;
     saldo?: number;
 };
 
 export type SaldoCardProps = {
-    hijos: unknown[];
     pantalla: string;
 };

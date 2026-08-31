@@ -1,22 +1,21 @@
 
 import {NavLink} from "react-router-dom";
-import Movimientos from "../data/Movimientos.json";
-import ActivityCard from "./ActivityCard";
-import MovimientoSheet from "./MovimientoSheet";
+import { useMovimientos } from "../../context/MovimientosContext";
+import ActivityCard from "../actividad/ActivityCard";
+import MovimientoSheet from "../actividad/MovimientoSheet";
 import { useState } from "react";
-import type {MovimientoProps} from "../types/movimiento.types"
+import type {MovimientoProps} from "../../types/movimiento.types"
 
 export default function MovimientosHome(){
-    
-    const movimientos = Movimientos.slice(-5);
+
+    const { movimientos: todosLosMovimientos } = useMovimientos();
+    const movimientos = todosLosMovimientos.slice(-5);
     const [movimientoAbierto,setMovimientoAbierto]=useState<MovimientoProps | null>(null)
 
     const handleMovimientoClick=(movimiento:MovimientoProps)=>{
-        alert('que clickeas puta');
         setMovimientoAbierto(movimiento);
     }
     const handleCloseMovimiento=()=>{
-        alert('por que te vas puta');
         setMovimientoAbierto(null);
     }
 

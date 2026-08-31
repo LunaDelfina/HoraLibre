@@ -1,6 +1,6 @@
-import type { ProductosCategoriaSheetProps } from "../types/catalogo.types"
-import Productos from "../data/Productos.json"
-import SubCategorias from "../data/SubCategorias.json"
+import type { ProductosCategoriaSheetProps } from "../../types/catalogo.types"
+import Productos from "../../data/Productos.json"
+import SubCategorias from "../../data/SubCategorias.json"
 import ProductItem from "./ProductItem"
 
 export default function ProductosCategoriasSheet({ categoria, onClose }: ProductosCategoriaSheetProps) {

@@ -1,4 +1,4 @@
-import type { AlmuerzoProps } from "../types/almuerzo.types"
+import type { AlmuerzoProps } from "../../types/almuerzo.types"
 
 
 export default function AlmuerzoItem({ data, seleccionado, onToggle }: AlmuerzoProps) {

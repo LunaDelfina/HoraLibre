@@ -1,8 +1,8 @@
 
 //import  productos from "../data/Productos.json"
 import { useState } from "react"
-import type { CategoriaProps, CategoriesProps } from "../types/catalogo.types"
-import Productos from "../data/Productos.json"
+import type { CategoriaProps, CategoriesProps } from "../../types/catalogo.types"
+import Productos from "../../data/Productos.json"
 import ProductItem from "./ProductItem";
 import ProductosCategoriasSheet from "./ProductosCategoriaSheet";
 

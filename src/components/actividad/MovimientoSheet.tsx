@@ -1,11 +1,11 @@
 
-import type { MovimientoSheetProps } from "../types/movimiento.types";
+import type { MovimientoSheetProps } from "../../types/movimiento.types";
 import getStyle from "./getStyle";
-import HistorialMovimientos from "../data/HistorialMovimientos.json"
-import type { HistorialMovimientoProps } from "../types/movimiento.types";
+import HistorialMovimientos from "../../data/HistorialMovimientos.json"
+import type { HistorialMovimientoProps } from "../../types/movimiento.types";
 //import { useState } from "react";
-import CopyButton from "./copyButton.tsx";
-import { Whatsapp } from "./CTAWhatsapp.tsx"
+import CopyButton from "../common/copyButton.tsx";
+import { Whatsapp } from "../common/CTAWhatsapp.tsx"
 
 function getHistorial(movimiento: MovimientoSheetProps["movimiento"]) {
     if (!movimiento?.id) return [] as HistorialMovimientoProps[];

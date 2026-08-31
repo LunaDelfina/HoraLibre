@@ -1,6 +1,6 @@
 import { useState } from "react";
-import CopyIcon from "../assets/icons/Copy.svg";
-import CopiedIcon from "../assets/icons/Copied.svg";
+import CopyIcon from "../../assets/icons/Copy.svg";
+import CopiedIcon from "../../assets/icons/Copied.svg";
 
 export type ContenidoProps = {
     contenido: string | number;

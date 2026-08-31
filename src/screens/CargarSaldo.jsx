@@ -1,8 +1,12 @@
-function CargarSaldo(){
-    return(
-        <div>
-            <h1>Cargar Saldo</h1>
-        </div>
+import TopHome from '../components/common/TopHome.tsx'
+
+
+function CargarSaldo() {
+    return (
+        <section>
+            <TopHome pantalla="CargarSaldo" titulo=" " subtitulo="Cargar Saldo" nombre="Nacho" />
+
+        </section>
     )
 }
 

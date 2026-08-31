@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "tipo": "Recarga",
+    "titulo": "Recarga de saldo",
+    "hijo":"Paula",
+    "medio": "Mercado Pago",
+    "estado": "Aprobada",
+    "monto": 35000,
+    "fecha": "19/07/26",
+    "hora": "09:15am"
+  },
+  {
+    "id": 2,
+    "tipo": "Recarga",
+    "titulo": "Recarga de saldo",
+    "hijo":"Pablo",
+    "medio": "Transferencia",
+    "estado": "Aprobada",
+    "monto": 35000,
+    "fecha": "Hoy",
+    "hora": "10:02am"
+  },
+  {
+    "id": 3,
+    "tipo": "Devolución",
+    "titulo": "Devolución",
+    "hijo":"Pablo",
+    "medio": "Transferencia",
+
+    "estado": "pedido cancelado",
+    "monto": 2400,
+    "fecha": "19/07/26",
+    "hora": "11:47am"
+  },
+  {
+    "id": 4,
+    "tipo": "Recarga",
+    "titulo": "Recarga de saldo",
+    "hijo":"Pablo",
+    "medio": "Transferencia",
+    "estado": "Pendiente de aprobación",
+    "monto": 35000,
+    "fecha": "19/07/26",
+    "hora": "12:30pm"
+  },
+  {
+    "id": 5,
+    "tipo": "Recarga",
+    "titulo": "Recarga de saldo",
+    "hijo":"Pablo",
+    "medio": "Transferencia",
+    "estado": "Rechazado",
+    "monto": 35000,
+    "fecha": "19/07/26",
+    "hora": "01:05pm"
+  },
+  {
+    "id": 6,
+    "tipo": "Compra",
+    "titulo": "Compra en el kiosco",
+    "hijo":"Paula",
+    "medio": "2 productos",
+    "estado": null,
+    "monto": 5000,
+    "fecha": "Hoy",
+    "hora": "10:35am"
+  },
+  {
+    "id": 7,
+    "tipo": "Pedido",
+    "titulo": "Pedido por la app",
+    "hijo":"Pablo",
+    "medio": "1 producto",
+    "estado": "Listo para retirar",
+    "monto": 2500,
+    "fecha": "Hoy",
+    "hora": "10:35am"
+  },
+  {
+    "id": 8,
+    "tipo": "Pedido",
+    "titulo": "Pedido por la app",
+    "hijo":"Pablo",
+    "medio": "3 productos",
+    "estado": "Rechazado",
+    "monto": 2400,
+    "fecha": "Hoy",
+    "hora": "10:35am"
+  }
+]

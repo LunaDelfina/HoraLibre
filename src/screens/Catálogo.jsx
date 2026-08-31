@@ -1,15 +1,16 @@
-import TopHome from '../components/TopHome.tsx'
-import hijos from "../data/Hijos.json"
-import Calendariocatalogo from '../components/Calendariocatalogo.jsx'
+import TopHome from '../components/common/TopHome.tsx'
+import Calendariocatalogo from '../components/catalogo/Calendariocatalogo.jsx'
 import Categorias from "../data/CategoriasProductos.json"
-import ProductosSlider from '../components/ProductosSlider.tsx'
-import Carrito from '../components/CarritoBtn.jsx'
+import ProductosSlider from '../components/catalogo/ProductosSlider.tsx'
+import Carrito from '../components/catalogo/CarritoBtn.jsx'
+import {CarritoProvider} from "../context/CarritoContext.tsx"
 //import type { TopHomeProps } from '../types/home.types.ts'
 
 function Catalogo() {
     return (
+        <CarritoProvider>
         <section>
-            <TopHome pantalla="Catalogo" titulo="Tu propia" subtitulo="Cantina Virtual" nombre="Nacho" hijos={hijos} />
+            <TopHome pantalla="Catalogo" titulo="¡Tu propia" subtitulo="Cantina Virtual!" nombre="Nacho" />
             <Calendariocatalogo />
             {Categorias.map((categoria) => {
                 return (
@@ -20,6 +21,7 @@ function Catalogo() {
 
 
         </section>
+        </CarritoProvider>
     )
 }
 

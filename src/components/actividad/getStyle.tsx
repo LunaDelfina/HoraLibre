@@ -1,16 +1,16 @@
 
 
-import Compra from '../assets/ActivityIcons/Compra.svg';
-import Devolucion from '../assets/ActivityIcons/Devolucion.svg';
-import Pedido from '../assets/ActivityIcons/Pedido.svg';
-import Recarga from '../assets/ActivityIcons/Recarga.svg';
-import RecargaRechazada from '../assets/ActivityIcons/RecargaRechazada.svg';
+import Compra from '../../assets/ActivityIcons/Compra.svg';
+import Devolucion from '../../assets/ActivityIcons/Devolucion.svg';
+import Pedido from '../../assets/ActivityIcons/Pedido.svg';
+import Recarga from '../../assets/ActivityIcons/Recarga.svg';
+import RecargaRechazada from '../../assets/ActivityIcons/RecargaRechazada.svg';
 
-import ListoBadge from '../assets/ActivityIcons/ListoBadge.svg';
-import PendienteBadge from '../assets/ActivityIcons/PendienteBadge.svg';
-import RechazadoBadge from '../assets/ActivityIcons/RechazadoBadge.svg';
+import ListoBadge from '../../assets/ActivityIcons/ListoBadge.svg';
+import PendienteBadge from '../../assets/ActivityIcons/PendienteBadge.svg';
+import RechazadoBadge from '../../assets/ActivityIcons/RechazadoBadge.svg';
 
-import type { ActivityCardProps, ActivityStyle } from '../types/movimiento.types';
+import type { ActivityCardProps, ActivityStyle } from '../../types/movimiento.types';
 export default function getStyle({ movimiento }: ActivityCardProps): ActivityStyle {
     const teal= "rgba(46, 196, 182, 1)"
     const verde_primario = "#0F6E56"
