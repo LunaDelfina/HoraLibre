@@ -1,6 +1,11 @@
 export type CategoriesProps = {
     titulo: string;
     id: number;
+};
+
+export type DayProps = {
+    dia: string;
+    numero: number;
     seleccionado: boolean;
     onClick: () => void;
 };

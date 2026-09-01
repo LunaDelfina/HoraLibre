@@ -9,7 +9,7 @@ type CarritoSheetProps = {
 }
 
 export default function CarritoSheet({ abierto, onClose }: CarritoSheetProps) {
-    const { items, sumar, restar, eliminar, totalItems, totalPrecio, vaciar } = useCarrito();
+    const { items, sumar, restar, eliminar, totalItems, totalPrecio, vaciar,fecha } = useCarrito();
     const { hijoSeleccionado, descontarSaldo } = useHijos();
     const { agregarPedido } = useMovimientos();
     const [pedidoConfirmado, setPedidoConfirmado] = useState(false);
@@ -105,9 +105,14 @@ export default function CarritoSheet({ abierto, onClose }: CarritoSheetProps) {
 
                     {items.length > 0 && (
                         <div className="flex flex-col px-6 py-4 gap-3 shrink-0 border-t border-grisclaro">
+                            
                             <div className="flex justify-between items-center">
                                 <span className="font-display font-bold text-carbon">Total</span>
                                 <span className="font-display font-bold text-carbon text-lg">${totalPrecio}</span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span className="font-display font-bold text-gris">Pedido para</span>
+                                <span className="font-display font-bold text-gris text-md">{fecha}</span>
                             </div>
                             {saldoInsuficiente && (
                                 <p className="text-red-600 text-xs text-center">

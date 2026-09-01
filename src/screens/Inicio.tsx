@@ -1,4 +1,4 @@
-import TopHome from '../components/common/TopHome'
+import TopHome from '../components/common/TopHome.tsx'
 import Movimientos from "../components/home/MovimientosHome.tsx"
 import Almuerzo from "../components/home/Almuerzo.tsx"
 import Disclaimer from "../components/home/disclaimer.tsx"

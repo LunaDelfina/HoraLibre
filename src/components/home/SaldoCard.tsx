@@ -2,7 +2,11 @@
 
 import { NavLink } from "react-router-dom";
 import { useHijos } from "../../context/HijosContext";
-import type {Hijo, SaldoCardProps} from "../../types/home.types"
+import { WhatsappPago } from "../common/CTAWhatsapp";
+import { MercadoPagoPago } from "../common/CTAMercadoPago";
+import CopyButton from "../common/copyButton.tsx";
+import type { Hijo, SaldoCardProps } from "../../types/home.types"
+import EscuelaData from "../../data/EscuelaData.json"
 
 function NombresHijos({
     hijos,
@@ -13,14 +17,14 @@ function NombresHijos({
     hijoSeleccionado: Hijo | null;
     onSelect: (hijo: Hijo) => void;
 }) {
-    const hijoseleccionadostyle="bg-crema rounded-t-lg py-2 px-4 text-naranja font-display font-bold text-lg h-full items-center"
-    const hijosinseleccionarstyle="bg-[#D9D9D9] py-2 px-4 font-light rounded-tr-lg text-carbon text-md h-full"
-    return(
+    const hijoseleccionadostyle = "bg-crema rounded-t-lg py-2 px-4 text-naranja font-display font-bold text-lg h-full items-center"
+    const hijosinseleccionarstyle = "bg-[#D9D9D9] py-2 px-4 font-light rounded-tr-lg text-carbon text-md h-full"
+    return (
         <div className="flex items-start justify-start w-fit bg-[#D9D9D9] h-10 rounded-t-lg overflow-hidden">
             {hijos.map((hijo) => (
-                <p className={hijoSeleccionado?.nombre===hijo.nombre ? hijoseleccionadostyle : hijosinseleccionarstyle}
-                      key={hijo.nombre} onClick={()=>onSelect(hijo)}
-                 >{hijo.nombre}</p>
+                <p className={hijoSeleccionado?.nombre === hijo.nombre ? hijoseleccionadostyle : hijosinseleccionarstyle}
+                    key={hijo.nombre} onClick={() => onSelect(hijo)}
+                >{hijo.nombre}</p>
             ))}
         </div>
     )
@@ -29,7 +33,7 @@ export default function SaldoCard({ pantalla }: SaldoCardProps) {
 
     const { hijos, hijoSeleccionado, seleccionarHijo } = useHijos();
 
-    return(
+    return (
         <div className="w-full  h-fit rounded-lg ">
             <NombresHijos
                 hijos={hijos}
@@ -43,16 +47,30 @@ export default function SaldoCard({ pantalla }: SaldoCardProps) {
                         <p className=" font-display font-bold text-4xl mb-2 ">${hijoSeleccionado?.saldo}</p>
                         <p className=" font-thin font-gris text-sm">Hoy gastó $2570 en la cantina</p>
                         <NavLink to="/cargarsaldo"
-                        className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
+                            className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
+                    </>
+                ) : pantalla === "CargarSaldo" ? (
+                    <>
+                        <p className=" font-display font-bold text-4xl mb-2 ">${hijoSeleccionado?.saldo}</p>
+                        <p className=" font-thin font-gris text-sm">Transferí a este alias</p>
+                        <div className="flex justify-between items-center bg-naranja/5 px-3 py-2.5 rounded-lg w-full">
+                            <p className="font-sans font-semibold text-carbon">{EscuelaData[0].alias}</p>
+                            <CopyButton contenido={EscuelaData[0].alias ?? ""} />
+                        </div>
+                        <WhatsappPago />
+                        <MercadoPagoPago />
+
                     </>
                 ) : (
                     <div className="w-full flex items-center justify-between">
                         <p className=" font-display font-bold text-4xl ">${hijoSeleccionado?.saldo}</p>
                         <NavLink to="/cargarsaldo"
-                        className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
+                            className="bg-naranja text-crema px-4 py-2 rounded-lg font-bold text-sm tracking-widest">+ Recargar</NavLink>
                     </div>
-                )}
-            </div>
-        </div>
+                )
+                }
+
+            </div >
+        </div >
     )
 }

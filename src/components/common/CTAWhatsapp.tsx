@@ -9,6 +9,15 @@ export function Whatsapp() {
     )
 }
 
+export function WhatsappPago() {
+    return (
+        <button className="w-full bg-teal flex justify-center items-center py-2 rounded-lg gap-3 active:opacity-90">
+            <img src={WhatsappLogo}></img>
+            <h2 className="text-white font-display text-sm">Ya transferí, enviar comprobante</h2>
+        </button>
+    )
+}
+
 export function WhatsappAlmuerzo({ seleccionados, platos }: { seleccionados: number[]; platos: AlmuerzoData[] }) {
   const hayElegidos = seleccionados.length > 0;
 

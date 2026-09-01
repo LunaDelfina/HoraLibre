@@ -15,6 +15,8 @@ type CarritoContextValue = {
     vaciar: () => void;
     totalItems: number;
     totalPrecio: number;
+    fecha: string;
+    actualizarFecha: (nuevaFecha: string) => void;
 }
 
 
@@ -56,8 +58,13 @@ export function CarritoProvider({children}:{children:ReactNode}){
     const totalItems=items.reduce ((suma,item)=>suma + item.cantidad,0);
     const totalPrecio=items.reduce ((suma,item)=>suma + item.producto.precio*item.cantidad,0);
 
+    const [fecha, setFecha]=useState(new Date().toLocaleDateString());
+    function actualizarFecha(nuevaFecha:string){
+        setFecha(nuevaFecha);
+    }
+
     return(
-        <CarritoContext value={{items,agregar,sumar,restar,eliminar,vaciar,totalItems,totalPrecio}}>
+        <CarritoContext value={{items,agregar,sumar,restar,eliminar,vaciar,totalItems,totalPrecio,fecha,actualizarFecha}}>
         {children}
         </CarritoContext>
     )

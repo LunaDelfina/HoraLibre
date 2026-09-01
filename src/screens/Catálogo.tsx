@@ -1,10 +1,9 @@
 import TopHome from '../components/common/TopHome.tsx'
-import Calendariocatalogo from '../components/catalogo/Calendariocatalogo.jsx'
+import Calendariocatalogo from '../components/catalogo/Calendariocatalogo.tsx'
 import Categorias from "../data/CategoriasProductos.json"
 import ProductosSlider from '../components/catalogo/ProductosSlider.tsx'
-import Carrito from '../components/catalogo/CarritoBtn.jsx'
+import Carrito from '../components/catalogo/CarritoBtn.tsx'
 import {CarritoProvider} from "../context/CarritoContext.tsx"
-//import type { TopHomeProps } from '../types/home.types.ts'
 
 function Catalogo() {
     return (

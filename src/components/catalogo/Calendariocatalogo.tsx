@@ -1,4 +1,7 @@
 import { useState } from "react"
+import type { DayProps } from "../../types/catalogo.types"
+
+import { useCarrito } from "../../context/CarritoContext"
 
 const diasSemana = ["Domingo", "Lun", "Mar", "Miér", "Jue", "Vie", "Sábado"]
 
@@ -19,7 +22,9 @@ function getSemanaActual() {
     })
 }
 
-function Day({ dia, numero, seleccionado, onClick }) {
+
+function Day({ dia, numero, seleccionado, onClick }: DayProps) {
+    
     const styleSinSeleccionar="bg-white border border-gris/25 w-full rounded-lg text-gris p-2 transition-all duration-200"
     const styleSeleccionado="bg-naranja border-crema w-full rounded-lg text-crema p-2 transition-all duration-200"
     return (
@@ -36,7 +41,12 @@ function Calendariocatalogo() {
     const semana = getSemanaActual()
     const hoy = new Date()
     const datosDeHoy = semana.find((item) => item.numero === hoy.getDate())
+    function handleDiaSeleccionado(dia: { dia: string; numero: number }) {
+        setDiaSeleccionado(dia)
+        actualizarFecha(`${dia.numero}/${hoy.getMonth() + 1}/${hoy.getFullYear()}`)
+    }
     const [diaSeleccionado, setDiaSeleccionado] = useState(datosDeHoy)
+    const { actualizarFecha } = useCarrito()
 
     return (
         <section className="w-full px-8 ">
@@ -48,7 +58,7 @@ function Calendariocatalogo() {
                     dia={item.dia}
                     numero={item.numero}
                     seleccionado={diaSeleccionado?.numero === item.numero}
-                    onClick={() => setDiaSeleccionado(item)}
+                    onClick={handleDiaSeleccionado.bind(null, item)}
                 />
             ))}
             </div>

@@ -3,15 +3,15 @@ export type SaludoHomeProps = {
 };
 
 export type SaludoProps = {
-    titulo: string;
-    subtitulo: string;
+    titulo?: string;
+    subtitulo?: string;
 };
 
 export type TopHomeProps = {
     nombre: string;
     pantalla: string;
-    titulo: string;
-    subtitulo: string;
+    titulo?: string;
+    subtitulo?: string;
 };
 
 export type Hijo = {
