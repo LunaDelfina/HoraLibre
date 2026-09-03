@@ -1,5 +1,5 @@
 
-import type { MovimientoProps } from "../../types/movimiento.types";
+import type { MovimientoProps, TotalCardsProps } from "../../types/movimiento.types";
 
 function getMovimientosDelMes(movimientos: MovimientoProps[], mes: number, anio: number) {
     return movimientos.filter((movimiento) => {
@@ -8,30 +8,39 @@ function getMovimientosDelMes(movimientos: MovimientoProps[], mes: number, anio:
     })
 }
 
+function getNombreMes(mes: number) {
+    const nombresMeses = [
+        "enero", "febrero", "marzo", "abril", "mayo", "junio",
+        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+    ];
+
+    return nombresMeses[mes] ?? "mes desconocido";
+}
+
 function getTotalIngresos(movimientos: MovimientoProps[]) {
     return movimientos.reduce((total: number, movimiento: MovimientoProps) => {
-        return total + (movimiento.tipo === "ingreso" ? movimiento.monto : 0);
+        return total + (movimiento.tipo === "Recarga" ? movimiento.monto : 0);
     }, 0);
 }
 
 function getTotalGastos(movimientos: MovimientoProps[]) {
     return movimientos.reduce((total: number, movimiento: MovimientoProps) => {
-        return total + (movimiento.tipo === "compra" ? movimiento.monto : 0);
+        return total + (movimiento.tipo === "Compra" || movimiento.tipo === "Pedido" ? movimiento.monto : 0);
     }, 0);
 }
 
-export default function TotalCards(tipo: string, movimientos: MovimientoProps[], mes: number, anio: number) {
+export default function TotalCards({ tipo, movimientos, mes, anio }: TotalCardsProps) {
     const colorfondo =  tipo=== "ingresos" ? "bg-teal/25" : "bg-rojo/25"
-    const colorletra=  tipo=== "ingresos" ? "bg-teal" : "bg-rojo"
+    const colorletra=  tipo=== "ingresos" ? "text-verde" : "text-rojo"
 
-    const titulo= tipo=== "ingresos" ? `Cargaste en ${mes}` : `Se gastó en ${mes}`
+    const titulo= tipo=== "ingresos" ? `Cargaste en ${getNombreMes(mes)}` : `Se gastó en ${getNombreMes(mes)}`
     const monto= tipo=== "ingresos" ? getTotalIngresos(getMovimientosDelMes(movimientos, mes, anio)) : getTotalGastos(getMovimientosDelMes(movimientos, mes, anio))
 
 return (
 
-    <div className={`w-full rounded-lg ${colorfondo} p-4 flex flex-col items-start justify-center gap-1`}>
-        <p>{titulo}</p>
-        <p className={`text-2xl font-bold ${colorletra} text-white p-2 rounded-lg`}>
+    <div className={`w-full rounded-lg ${colorfondo} ${colorletra} px-4 py-3 flex flex-col  items-start justify-center text-left`}>
+        <p className="text-xs font-semibold">{titulo}</p>
+        <p className={`text-lg font-[900]`}>
             ${monto.toFixed(2)}
         </p>
     </div>

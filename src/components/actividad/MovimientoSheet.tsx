@@ -6,6 +6,7 @@ import type { HistorialMovimientoProps } from "../../types/movimiento.types";
 //import { useState } from "react";
 import CopyButton from "../common/copyButton.tsx";
 import { Whatsapp } from "../common/CTAWhatsapp.tsx"
+import { formatFecha } from "../../utils/fecha";
 
 function getHistorial(movimiento: MovimientoSheetProps["movimiento"]) {
     if (!movimiento?.id) return [] as HistorialMovimientoProps[];
@@ -53,7 +54,7 @@ function MovimientoSheet({ movimiento, onClose }: MovimientoSheetProps) {
                         {style?.signo}${movimiento?.monto}
                     </h1>
                     <p className="font-sans text-sm text-carbon font-light">{movimiento?.hijo} · {movimiento?.medio}</p>
-                    <p className="font-sans text-xs text-gris font-bold">{movimiento?.fecha} · {movimiento?.hora}</p>
+                    <p className="font-sans text-xs text-gris font-bold">{movimiento?.fecha ? formatFecha(movimiento.fecha) : ""} · {movimiento?.hora}</p>
 
                     {(movimiento?.tipo === "Recarga" || movimiento?.tipo === "Pedido") && (
                         <div className='px-3 py-1 mt-3 rounded-lg bg-gris w-fit flex items-center gap-1' style={{ background: style?.color_secundario_badge }}>
@@ -81,7 +82,7 @@ function MovimientoSheet({ movimiento, onClose }: MovimientoSheetProps) {
                                         </div>
                                         <div className={esUltimo ? 'pb-4' : 'pb-5'}>
                                             <p className="font-semibold text-carbon text-sm leading-tight">{item.descripcion}</p>
-                                            <p className="font-bold text-gris text-xs mt-0.5">{item.fecha} · {item.hora}</p>
+                                            <p className="font-bold text-gris text-xs mt-0.5">{formatFecha(item.fecha)} · {item.hora}</p>
                                         </div>
                                     </li>
                                 );

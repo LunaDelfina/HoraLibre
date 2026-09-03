@@ -3,8 +3,8 @@
   {
     "nombre": "Paula",
     "apellido": "Luna",
-    "edad": 5,
-    "foto": "https://i.pinimg.com/564x/0e/1f/3c/0e1f3c7d8a9b5d4f2b6e5f8a9c1e2d3f.jpg",
+    "fechaNacimiento": "2021-03-15",
+    "foto": "/src/assets/ProfilePicDefault/Durazno.svg",
     "id": 1,
     "escuela": "Jardin de infantes",
     "grado": "Preescolar",
@@ -14,8 +14,8 @@
   {
     "nombre": "Santiago",
     "apellido": "Luna",
-    "edad": 8,
-    "foto": "https://i.pinimg.com/564x/0e/1f/3c/0e1f3c7d8a9b5d4f2b6e5f8a9c1e2d3f.jpg",
+    "fechaNacimiento": "2018-05-20",
+    "foto": "/src/assets/ProfilePicDefault/Sandia.svg",
     "id": 2,
     "escuela": "Primaria",
     "grado": "Segundo grado",

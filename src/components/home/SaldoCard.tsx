@@ -17,7 +17,7 @@ function NombresHijos({
     hijoSeleccionado: Hijo | null;
     onSelect: (hijo: Hijo) => void;
 }) {
-    const hijoseleccionadostyle = "bg-crema rounded-t-lg py-2 px-4 text-naranja font-display font-bold text-lg h-full items-center"
+    const hijoseleccionadostyle = "bg-white rounded-t-lg py-2 px-4 text-naranja font-display font-bold text-lg h-full items-center"
     const hijosinseleccionarstyle = "bg-[#D9D9D9] py-2 px-4 font-light rounded-tr-lg text-carbon text-md h-full"
     return (
         <div className="flex items-start justify-start w-fit bg-[#D9D9D9] h-10 rounded-t-lg overflow-hidden">
@@ -40,7 +40,7 @@ export default function SaldoCard({ pantalla }: SaldoCardProps) {
                 hijoSeleccionado={hijoSeleccionado}
                 onSelect={seleccionarHijo}
             />
-            <div className="bg-crema h-full w-full px-4 py-6 rounded-b-lg rounded-tr-lg text-carbon shadow-md flex flex-col items-start justify-center gap-1 font-sans text-md">
+            <div className="bg-white h-full w-full px-4 py-6 rounded-b-lg rounded-tr-lg text-carbon shadow-md flex flex-col items-start justify-center gap-1 font-sans text-md">
                 <p className=" font-light">Saldo disponible</p>
                 {pantalla === "Inicio" ? (
                     <>

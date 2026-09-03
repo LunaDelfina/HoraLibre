@@ -16,8 +16,14 @@ export type TopHomeProps = {
 
 export type Hijo = {
     nombre: string;
+    apellido?: string;
     id?: number;
     saldo?: number;
+    fechaNacimiento?: string;
+    escuela?: string;
+    grado?: string;
+    foto?: string;
+    intereses?: string[];
 };
 
 export type SaldoCardProps = {

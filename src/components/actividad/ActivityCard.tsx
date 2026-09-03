@@ -1,5 +1,6 @@
 import getStyle from "./getStyle";
 import type { ActivityCardProps } from "../../types/movimiento.types";
+import { formatFecha, esFechaHoy } from "../../utils/fecha";
 
 
 export default function ActivityCard({ movimiento }: ActivityCardProps) {
@@ -37,7 +38,7 @@ export default function ActivityCard({ movimiento }: ActivityCardProps) {
                 style={{
                     color:style.color_precio,
                     textDecoration:style.line?'line-trough':'none'} }>{style.signo}${movimiento.monto}</p>
-                <p className='text-xs text-right font-bold text-gris'>{movimiento.fecha} {movimiento.fecha==="Hoy"? movimiento.hora:""}</p>
+                <p className='text-xs text-right font-bold text-gris'>{formatFecha(movimiento.fecha)} {esFechaHoy(movimiento.fecha) ? movimiento.hora : ""}</p>
             </div>
         </div>
     );

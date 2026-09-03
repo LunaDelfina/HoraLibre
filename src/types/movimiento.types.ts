@@ -39,3 +39,10 @@ export type HistorialMovimientoProps = {
     fecha: string;
     hora: string;
 };
+
+export type TotalCardsProps = {
+    tipo: string;
+    movimientos: MovimientoProps[];
+    mes: number;
+    anio: number;
+};

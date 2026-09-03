@@ -23,6 +23,14 @@ function horaActual() {
     return `${horas12}:${minutos}${sufijo}`;
 }
 
+function fechaActual() {
+    const ahora = new Date();
+    const anio = ahora.getFullYear();
+    const mes = String(ahora.getMonth() + 1).padStart(2, "0");
+    const dia = String(ahora.getDate()).padStart(2, "0");
+    return `${anio}-${mes}-${dia}T00:00:00`;
+}
+
 export function MovimientosProvider({ children }: { children: ReactNode }) {
     const [movimientos, setMovimientos] = useState<MovimientoProps[]>(movimientosData as MovimientoProps[]);
 
@@ -37,7 +45,7 @@ export function MovimientosProvider({ children }: { children: ReactNode }) {
                 medio: `${cantidadProductos} ${cantidadProductos === 1 ? "producto" : "productos"}`,
                 estado: "Armando el pedido",
                 monto,
-                fecha: "Hoy",
+                fecha: fechaActual(),
                 hora: horaActual(),
             };
             return [...prev, pedido];

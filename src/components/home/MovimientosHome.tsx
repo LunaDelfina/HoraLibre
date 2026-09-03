@@ -15,9 +15,6 @@ export default function MovimientosHome(){
     const handleMovimientoClick=(movimiento:MovimientoProps)=>{
         setMovimientoAbierto(movimiento);
     }
-    const handleCloseMovimiento=()=>{
-        setMovimientoAbierto(null);
-    }
 
     return(
 
@@ -33,7 +30,7 @@ export default function MovimientosHome(){
                     </div>
                    
                     )}
-                     <MovimientoSheet movimiento={movimientoAbierto} onClose={handleCloseMovimiento} />
+                     <MovimientoSheet movimiento={movimientoAbierto} onClose={()=>setMovimientoAbierto(null)} />
             </div>
         </section>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type OndaSaldoProps = {
   className?: string;
@@ -10,11 +10,33 @@ const WAVE_REPOSO =
 const WAVE_RESPIRO =
   "M0 0H402V206C402 206 358 240 300 232C242 224 230 202 176 202C122 202 104 246 40 242C22 241 0 232 0 232V0Z";
 
+const CYCLE_MS = 4500;
+const NUM_RE = /-?\d*\.?\d+/g;
+
+// Both waves share the same command structure, so the numbers can be
+// interpolated in place — this avoids CSS transitions on the `d`
+// attribute, which mobile browsers (iOS Safari, Capacitor WebView) don't
+// animate reliably.
+function interpolatePath(from: string, to: string, t: number): string {
+  const toNums = to.match(NUM_RE)!.map(Number);
+  let i = 0;
+  return from.replace(NUM_RE, (match) => {
+    const fromNum = Number(match);
+    const value = fromNum + (toNums[i] - fromNum) * t;
+    i += 1;
+    return String(Math.round(value * 100) / 100);
+  });
+}
+
+function easeInOutQuad(t: number) {
+  return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+}
+
 export default function OndaSaldo({ className = "absolute inset-0 w-full h-full" }: OndaSaldoProps) {
   const [reducedMotion, setReducedMotion] = useState(
     () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   );
-  const [phase, setPhase] = useState(0);
+  const pathRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -24,31 +46,29 @@ export default function OndaSaldo({ className = "absolute inset-0 w-full h-full"
   }, []);
 
   useEffect(() => {
-    if (reducedMotion) return;
+    if (reducedMotion || !pathRef.current) return;
 
-    let cancelled = false;
-    let timerId: number;
+    let frameId: number;
+    let direction: 1 | -1 = 1;
+    let start = performance.now();
 
-    const tick = () => {
-      setPhase((p) => (p === 0 ? 1 : 0));
-      timerId = window.setTimeout(() => {
-        if (!cancelled) tick();
-      }, 4500);
+    const animate = (now: number) => {
+      const t = Math.min((now - start) / CYCLE_MS, 1);
+      const eased = easeInOutQuad(t);
+      const from = direction === 1 ? WAVE_REPOSO : WAVE_RESPIRO;
+      const to = direction === 1 ? WAVE_RESPIRO : WAVE_REPOSO;
+      pathRef.current?.setAttribute("d", interpolatePath(from, to, eased));
+
+      if (t >= 1) {
+        direction = direction === 1 ? -1 : 1;
+        start = now;
+      }
+      frameId = requestAnimationFrame(animate);
     };
 
-    timerId = window.setTimeout(tick, 4500);
-
-    return () => {
-      cancelled = true;
-      window.clearTimeout(timerId);
-    };
+    frameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frameId);
   }, [reducedMotion]);
-
-  const isBreathing = !reducedMotion && phase === 1;
-
-  const pathStyle: CSSProperties = {
-    transition: "d 4.5s ease-in-out",
-  };
 
   return (
     <svg
@@ -57,7 +77,7 @@ export default function OndaSaldo({ className = "absolute inset-0 w-full h-full"
       className={className}
       aria-hidden="true"
     >
-      <path d={isBreathing ? WAVE_RESPIRO : WAVE_REPOSO} fill="#F2653C" style={pathStyle} />
+      <path ref={pathRef} d={WAVE_REPOSO} fill="#F2653C" />
     </svg>
   );
 }

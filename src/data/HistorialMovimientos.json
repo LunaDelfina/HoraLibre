@@ -4,7 +4,7 @@
     "idMovimiento": 1,
     "tipo": "pago_realizado",
     "descripcion": "Se realizó el pago con Mercado Pago",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "09:15am"
   },
   {
@@ -12,7 +12,7 @@
     "idMovimiento": 1,
     "tipo": "aprobacion",
     "descripcion": "La cantina aprobó la recarga",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "09:20am"
   },
   {
@@ -20,7 +20,7 @@
     "idMovimiento": 2,
     "tipo": "ingreso_de_transferencia",
     "descripcion": "Se hizo la transferencia, en espera de comprobación",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:02am"
   },
   {
@@ -28,7 +28,7 @@
     "idMovimiento": 2,
     "tipo": "aprobacion_de_transferencia",
     "descripcion": "La cantina aprobó la transferencia",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:10am"
   },
   {
@@ -36,7 +36,7 @@
     "idMovimiento": 3,
     "tipo": "cancelacion",
     "descripcion": "El pedido fue cancelado",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "11:40am"
   },
   {
@@ -44,7 +44,7 @@
     "idMovimiento": 3,
     "tipo": "devolucion",
     "descripcion": "Se devolvió el saldo por transferencia",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "11:47am"
   },
   {
@@ -52,7 +52,7 @@
     "idMovimiento": 4,
     "tipo": "ingreso_de_transferencia",
     "descripcion": "Se hizo la transferencia, en espera de comprobación",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "12:30pm"
   },
   {
@@ -60,7 +60,7 @@
     "idMovimiento": 5,
     "tipo": "ingreso_de_transferencia",
     "descripcion": "Se hizo la transferencia, en espera de comprobación",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "01:05pm"
   },
   {
@@ -68,7 +68,7 @@
     "idMovimiento": 5,
     "tipo": "rechazo",
     "descripcion": "La cantina rechazó la transferencia",
-    "fecha": "19/07/26",
+    "fecha": "2026-07-19T00:00:00",
     "hora": "01:20pm"
   },
   {
@@ -76,7 +76,7 @@
     "idMovimiento": 6,
     "tipo": "compra",
     "descripcion": "Se realizó la compra en el kiosco",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:35am"
   },
   {
@@ -84,7 +84,7 @@
     "idMovimiento": 7,
     "tipo": "pedido_recibido",
     "descripcion": "Se recibió el pedido por la app",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:35am"
   },
   {
@@ -92,7 +92,7 @@
     "idMovimiento": 7,
     "tipo": "armando",
     "descripcion": "La cantina está armando el pedido",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:40am"
   },
   {
@@ -100,7 +100,7 @@
     "idMovimiento": 7,
     "tipo": "listo",
     "descripcion": "El pedido está listo para retirar",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:50am"
   },
   {
@@ -108,7 +108,7 @@
     "idMovimiento": 8,
     "tipo": "pedido_recibido",
     "descripcion": "Se recibió el pedido por la app",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:35am"
   },
   {
@@ -116,7 +116,7 @@
     "idMovimiento": 8,
     "tipo": "rechazo",
     "descripcion": "La cantina rechazó el pedido",
-    "fecha": "Hoy",
+    "fecha": "2026-09-02T00:00:00",
     "hora": "10:38am"
   }
 ]
